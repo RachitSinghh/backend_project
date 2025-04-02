@@ -12,7 +12,7 @@ dotenv.config({
   path:'./env'
 })
 
-// const app = express();
+const app = express();
 
 connectDB()
 .then(() =>{
@@ -26,7 +26,7 @@ connectDB()
   })
 })
 .catch((err) =>{
-  console.log("Mongo DB connection faile!!", err);
+  console.log("Mongo DB connection fail!!", err);
   process.exit(1)
 })
 
